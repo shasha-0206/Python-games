@@ -52,8 +52,6 @@ def gameloop():
     stars_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\star.png")
     ship_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\player.png")
 
-    ship2_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Camera Roll\project_4\spaceship.png")
-
     meteor_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\meteor.png")
     laser_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\laser.png")
     special_laser_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\special_laser.png")
@@ -69,7 +67,6 @@ def gameloop():
     meteor_pic = pygame.transform.scale(meteor_pic,(meteor_width,meteor_height))
     bg = pygame.transform.scale(bg,(screen_width,screen_height))
     ship_pic = pygame.transform.scale(ship_pic,(ship_width,ship_height))
-    ship2_pic = pygame.transform.scale(ship2_pic,(ship_width,ship_height))
     
     hearts = []
     def creat_heart():
