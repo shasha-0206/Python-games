@@ -17,10 +17,4 @@ This repository contains a collection of classic games created using Python and 
 - **Python**: Core programming language for logic.
 - **Pygame**: Game development library used for graphics, sound, and input handling.
 
-## Installation
 
-To get started with these games locally, follow these steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/python-games.git
