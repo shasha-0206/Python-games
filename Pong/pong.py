@@ -80,7 +80,7 @@ def gameloop():
         nonlocal velocity_x
         if ball_rect.colliderect(paddle_rect) or ball_rect.colliderect(paddle2_rect):
             velocity_x = -velocity_x
-            pygame.mixer.music.load(r"C:\Users\malkh\Desktop\Python-Games\Pong\assets\mixkit-game-ball-tap-2073.wav")
+            pygame.mixer.music.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\Pong\assets\mixkit-game-ball-tap-2073.wav")
             pygame.mixer.music.play()
 
     pause = False
@@ -126,7 +126,7 @@ def gameloop():
                 r_y += velocity_y
                 if r_y >= (screen_height - radius - 10) or r_y <= radius:
                     velocity_y = -velocity_y
-                    pygame.mixer.music.load(r"C:\Users\malkh\Desktop\Python-Games\Pong\assets\mixkit-game-ball-tap-2073.wav")
+                    pygame.mixer.music.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\Pong\assets\mixkit-game-ball-tap-2073.wav")
                     pygame.mixer.music.play()
 
                 # should place these here then only the collisioin will work
@@ -145,7 +145,7 @@ def gameloop():
                 if r_x >= (screen_width - radius):
                     r_x = screen_width // 2
                     r_y = screen_height // 2
-                    pygame.mixer.music.load(r"C:\Users\malkh\Desktop\Python-Games\Pong\assets\error-5-199276.mp3")
+                    pygame.mixer.music.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\Pong\assets\error-5-199276.mp3")
                     pygame.mixer.music.play()
                     velocity_x = random.choice(direction) #random direction everytime 
                     score += 1 # updating score 
@@ -154,7 +154,7 @@ def gameloop():
                 if r_x <= radius:
                     r_x = screen_width // 2
                     r_y = screen_height // 2
-                    pygame.mixer.music.load(r"C:\Users\malkh\Desktop\Python-Games\Pong\assets\error-5-199276.mp3")
+                    pygame.mixer.music.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\Pong\assets\error-5-199276.mp3")
                     pygame.mixer.music.play()
                     velocity_x = random.choice(direction) #random direction everytime 
                     score2 += 1 # updating score 

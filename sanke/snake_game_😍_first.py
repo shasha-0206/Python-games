@@ -4,18 +4,18 @@ pygame.mixer.init()
 pygame.init()
 
 # setting graphics
-apple_image = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\apple.png")
-home_screen = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\Screenshot 2024-04-30 222153.png")
-bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\891ee9a180d14aa4cb2f71100d7b3a987215d384.jpg")
-game_over_bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\maxresdefault.jpg")
+apple_image = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\apple.png")
+home_screen = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\Screenshot 2024-04-30 222153.png")
+bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\891ee9a180d14aa4cb2f71100d7b3a987215d384.jpg")
+game_over_bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\maxresdefault.jpg")
 
-head_up = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\head_up.png")
-head_right = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\head_right.png")
-head_left = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\head_left.png")
-head_down = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\head_down.png")
+head_up = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\head_up.png")
+head_right = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\head_right.png")
+head_left = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\head_left.png")
+head_down = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\head_down.png")
 
-body_horizontal = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\body_horizontal.png")
-body_vertical = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\body_vertical.png")
+body_horizontal = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\body_horizontal.png")
+body_vertical = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\body_vertical.png")
 
 game_over_bg = pygame.transform.scale(game_over_bg,(750,350))
 clock = pygame.time.Clock()
@@ -124,7 +124,7 @@ home_screen = pygame.transform.scale(home_screen, (screen_width, screen_height))
 
 # highscore display
 highscore = 0
-with open (r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\highscore.txt","r") as f:
+with open (r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\highscore.txt","r") as f:
     highscore = int(f.read())
 
 # homescreen image displyed

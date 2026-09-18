@@ -12,10 +12,10 @@ def game():
     screen_width = 500
     screen_height = 500
     # game graphics
-    bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\rps\assets\bg.png")
-    rock_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\rps\assets\stone.png")
-    paper_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\rps\assets\paper.png")
-    scissor_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\rps\assets\scissor.png")
+    bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\rps\assets\bg.png")
+    rock_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\rps\assets\stone.png")
+    paper_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\rps\assets\paper.png")
+    scissor_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\rps\assets\scissor.png")
 
     # resized images
     rock_pic = pygame.transform.scale(rock_pic,(width,height))

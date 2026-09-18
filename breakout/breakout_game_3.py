@@ -68,7 +68,7 @@ def gameloop():
 
     # highscore initialisation
     highscore = 0
-    with open (r"C:\Users\malkh\Desktop\Python-Games\breakout\assets\highscore_breakout.txt","r") as f:
+    with open (r"C:\Users\malkh\OneDrive\Desktop\Python-Games\breakout\assets\highscore_breakout.txt","r") as f:
         highscore = int(f.read())
 
     while not game_end:
@@ -79,8 +79,8 @@ def gameloop():
                 if event.key == pygame.K_q: 
                     game_end = True
                                    
-        bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\breakout\assets\Screenshot 2024-05-10 143404.png")
-        game_over_bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\breakout\assets\Screenshot 2024-05-29 140143.png")
+        bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\breakout\assets\Screenshot 2024-05-10 143404.png")
+        game_over_bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\breakout\assets\Screenshot 2024-05-29 140143.png")
         game_over_bg = pygame.transform.scale(game_over_bg,(screen_width,screen_height))
 
         game_window.blit(bg,(0,0))
@@ -108,7 +108,7 @@ def gameloop():
         # updating highscore
         if score > highscore:
             highscore = score
-            with open (r"C:\Users\malkh\Desktop\Python-Games\breakout\assets\highscore_breakout.txt","w") as f:
+            with open (r"C:\Users\malkh\OneDrive\Desktop\Python-Games\breakout\assets\highscore_breakout.txt","w") as f:
                 f.write(str(highscore))
 
         # gameover bg 

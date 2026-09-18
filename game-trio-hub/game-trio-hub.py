@@ -13,7 +13,7 @@ welcome_frame.pack()
 select_frame = Frame(t, width=754, height=528, bg='#c44ec7')  
 
 # setting bg of welcome frame
-bg_image = PhotoImage(file=r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-11 112231.png")
+bg_image = PhotoImage(file=r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-11 112231.png")
 bg_label = Label(welcome_frame, image=bg_image)
 bg_label.grid(row=0, column=0)
 
@@ -90,7 +90,7 @@ def gameloop():
 
     # highscore initialisation
     highscore = 0
-    with open (r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\breakout_score","r") as f:
+    with open (r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\breakout_score","r") as f:
         highscore = int(f.read())
 
     while not game_end:
@@ -102,8 +102,8 @@ def gameloop():
                     game_end = True
                     t.deiconify()
                                    
-        bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-10 143404.png")
-        game_over_bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-29 140143.png")
+        bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-10 143404.png")
+        game_over_bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-29 140143.png")
         game_over_bg = pygame.transform.scale(game_over_bg,(screen_width,screen_height))
 
         game_window.blit(bg,(0,0))
@@ -131,7 +131,7 @@ def gameloop():
         # updating highscore
         if score > highscore:
             highscore = score
-            with open (r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\breakout_score","w") as f:
+            with open (r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\breakout_score","w") as f:
                 f.write(str(highscore))
 
         # gameover bg 
@@ -176,10 +176,10 @@ def second_game():
     game_window = pygame.display.set_mode((screen_width, screen_height))
 
     # graphics
-    bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\bg.jpeg")
+    bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\bg.jpeg")
     bg = pygame.transform.scale(bg, (screen_width, screen_height))
 
-    game_over_bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\gettyimages-1325433246-640x640.jpg")
+    game_over_bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\gettyimages-1325433246-640x640.jpg")
     game_over_bg = pygame.transform.scale(game_over_bg,(screen_width,screen_height))
 
     # game title
@@ -198,7 +198,7 @@ def second_game():
 
     # highest time initialisation
     highest_time = 0
-    with open(r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\space_shooter1_score",'r') as f:
+    with open(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\space_shooter1_score",'r') as f:
        highest_time = int(f.read())
 
     # gameloop
@@ -235,7 +235,7 @@ def second_game():
             # updating highscore 
             if time > highest_time:
                 highest_time = time
-                with open(r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\space_shooter1_score",'w') as f:
+                with open(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\space_shooter1_score",'w') as f:
                     f.write(str(highest_time))
             
             # displaying highscore
@@ -299,18 +299,18 @@ def third_game():
     t.withdraw()
     pygame.init()
     pygame.font.init()
-    apple_image = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\apple.png")
-    home_screen = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\Screenshot 2024-04-30 222153.png")
-    bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\891ee9a180d14aa4cb2f71100d7b3a987215d384.jpg")
-    game_over_bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\maxresdefault.jpg")
+    apple_image = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\apple.png")
+    home_screen = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\Screenshot 2024-04-30 222153.png")
+    bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\891ee9a180d14aa4cb2f71100d7b3a987215d384.jpg")
+    game_over_bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\maxresdefault.jpg")
 
-    head_up = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\head_up.png")
-    head_right = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\head_right.png")
-    head_left = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\head_left.png")
-    head_down = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\head_down.png")
+    head_up = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\head_up.png")
+    head_right = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\head_right.png")
+    head_left = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\head_left.png")
+    head_down = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\head_down.png")
 
-    body_horizontal = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\body_horizontal.png")
-    body_vertical = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\sanke\assests\body_vertical.png")
+    body_horizontal = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\body_horizontal.png")
+    body_vertical = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\sanke\assests\body_vertical.png")
 
     game_over_bg = pygame.transform.scale(game_over_bg,(750,350))
     clock = pygame.time.Clock()
@@ -419,7 +419,7 @@ def third_game():
 
     # highscore display
     highscore = 0
-    with open (r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\snake_score","r") as f:
+    with open (r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\snake_score","r") as f:
         highscore = int(f.read())
 
     # homescreen image displyed
@@ -473,7 +473,7 @@ def third_game():
                             # setting highscore
                             if score > highscore:
                                 highscore = score
-                                with open (r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\snake_score","w") as f:
+                                with open (r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\snake_score","w") as f:
                                     f.write(str(highscore))
 
                             # Calling all the functions
@@ -525,7 +525,7 @@ def second_frame(click):
 t.bind("<Return>", second_frame)
 
 # snake game icon 
-s_game_image = PhotoImage(file=r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-10 170049.png")
+s_game_image = PhotoImage(file=r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-10 170049.png")
 s_game_image = s_game_image.subsample(2)
 s_image_label = Label(select_frame,image=s_game_image)
 s_image_label.place(x = 50,y = 50,width=100,height=100)
@@ -539,7 +539,7 @@ start_snake = Button(select_frame, text='Snake Game',
 start_snake.place(x=202, y=91)
 
 # breakout icon
-b_game_image = PhotoImage(file=r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-10 223216.png")
+b_game_image = PhotoImage(file=r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-10 223216.png")
 b_image_label = Label(select_frame,image=b_game_image)
 b_image_label.place(x = 51, y = 216,width=100,height=100)
 
@@ -552,7 +552,7 @@ start_break = Button(select_frame, text='Breakout Game',
 start_break.place(x=202, y=257)
 
 # bullet dodge icon
-bullet_game_image = PhotoImage(file=r"C:\Users\malkh\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-10 224500.png")
+bullet_game_image = PhotoImage(file=r"C:\Users\malkh\OneDrive\Desktop\Python-Games\game-trio-hub\assets\Screenshot 2024-05-10 224500.png")
 bullet_game_label = Label(select_frame,image=bullet_game_image)
 bullet_game_label.place(x = 50, y = 365,width=100,height=120)
 

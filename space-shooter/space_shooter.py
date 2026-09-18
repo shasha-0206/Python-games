@@ -48,16 +48,16 @@ def gameloop():
     creation = create_stars(30)
 
     # game graphics
-    bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\shooterbg.png")
-    stars_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\star.png")
-    ship_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\player.png")
+    bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\shooterbg.png")
+    stars_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\star.png")
+    ship_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\player.png")
 
-    meteor_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\meteor.png")
-    laser_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\laser.png")
-    special_laser_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\special_laser.png")
-    heart_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\heart.png")
-    game_over_bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\2134714.jpg")
-    explotion_pic = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\explosion.png")
+    meteor_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\meteor.png")
+    laser_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\laser.png")
+    special_laser_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\special_laser.png")
+    heart_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\heart.png")
+    game_over_bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\2134714.jpg")
+    explotion_pic = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\explosion.png")
 
     explotion_pic = pygame.transform.scale(explotion_pic,(40,40))
     game_over_bg = pygame.transform.scale(game_over_bg,(screen_width,screen_width))
@@ -134,7 +134,7 @@ def gameloop():
 
     # highscore
     highest_time = 0
-    with open(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\highscore.txt",'r') as f:
+    with open(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\highscore.txt",'r') as f:
        highest_time = int(f.read())
 
     # meteor timer
@@ -215,7 +215,7 @@ def gameloop():
         # updating highscore 
         if timer > highest_time:
             highest_time = timer
-            with open(r"C:\Users\malkh\Desktop\Python-Games\space-shooter\assets\highscore.txt",'w') as f:
+            with open(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter\assets\highscore.txt",'w') as f:
                 f.write(str(highest_time))
     
         if game_end == True:

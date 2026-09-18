@@ -13,10 +13,10 @@ def bullet_game():
     game_window = pygame.display.set_mode((screen_width, screen_height))
 
     # graphics
-    bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter1\assets\bg.jpeg")
+    bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter1\assets\bg.jpeg")
     bg = pygame.transform.scale(bg, (screen_width, screen_height))
 
-    game_over_bg = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter1\assets\gettyimages-1325433246-640x640.jpg")
+    game_over_bg = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter1\assets\gettyimages-1325433246-640x640.jpg")
     game_over_bg = pygame.transform.scale(game_over_bg,(screen_width,screen_height))
 
     # game title
@@ -35,7 +35,7 @@ def bullet_game():
 
     # highest time initialisation
     highest_time = 0
-    with open(r"C:\Users\malkh\Desktop\Python-Games\space-shooter1\assets\highscore_bullet.txt",'r') as f:
+    with open(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter1\assets\highscore_bullet.txt",'r') as f:
        highest_time = int(f.read())
 
     # gameloop
@@ -70,7 +70,7 @@ def bullet_game():
             # updating highscore 
             if time > highest_time:
                 highest_time = time
-                with open(r"C:\Users\malkh\Desktop\Python-Games\space-shooter1\assets\highscore_bullet.txt",'w') as f:
+                with open(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter1\assets\highscore_bullet.txt",'w') as f:
                     f.write(str(highest_time))
             
             # displaying highscore
@@ -79,7 +79,7 @@ def bullet_game():
             game_window.blit(highest_time_display,(730,10))
 
             # spaceship
-            spaceship = pygame.image.load(r"C:\Users\malkh\Desktop\Python-Games\space-shooter1\assets\spaceship.png")
+            spaceship = pygame.image.load(r"C:\Users\malkh\OneDrive\Desktop\Python-Games\space-shooter1\assets\spaceship.png")
             spaceship = pygame.transform.scale(spaceship,(player_width,player_height))
             game_window.blit(spaceship,(x,y))
 
